@@ -23,5 +23,5 @@ SNShareSDK
 	其中SNShareSDK为你工程目录名，路径为你的相对路径即可，确保含有上述项目即可。
       
 5, 找到工程的Info -> URL Types，添加对应的schema
-	
-	![image](https://github.com/qq644531343/iosTool/blob/master/screenshot/shareConfigInfo.png)
+
+![image](https://github.com/qq644531343/iosTool/blob/master/screenshot/shareConfigInfo.png)
