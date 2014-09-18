@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VDShareManager.h"
 
 @interface ViewController : UIViewController
 
