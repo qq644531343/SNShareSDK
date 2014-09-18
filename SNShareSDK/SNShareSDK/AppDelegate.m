@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "VDShareManager.h"
+
+#import "VDShareGlobal.h"
+#import "VDShareConfig.h"
 
 @implementation AppDelegate
 

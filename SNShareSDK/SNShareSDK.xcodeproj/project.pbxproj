@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091D590919CAD042006FBF58 /* libVDShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D590819CAD042006FBF58 /* libVDShare.a */; };
+		093D50D419CAE5E600E46DDE /* libVDShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093D50CE19CAE5E600E46DDE /* libVDShare.a */; };
+		093D50D519CAE5E600E46DDE /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093D50D019CAE5E600E46DDE /* TencentOpenAPI.framework */; };
+		093D50D619CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 093D50D119CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle */; };
+		093D50D719CAE5E600E46DDE /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 093D50D219CAE5E600E46DDE /* WeiboSDK.bundle */; };
 		094F88F119CAC85F00F2051D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F88F019CAC85F00F2051D /* Foundation.framework */; };
 		094F88F319CAC85F00F2051D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F88F219CAC85F00F2051D /* CoreGraphics.framework */; };
 		094F88F519CAC85F00F2051D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F88F419CAC85F00F2051D /* UIKit.framework */; };
@@ -32,8 +35,6 @@
 		09AD6CE619CAD510005E5D57 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CE519CAD510005E5D57 /* libc++.dylib */; };
 		09AD6CE819CAD51A005E5D57 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CE719CAD51A005E5D57 /* libsqlite3.dylib */; };
 		09AD6CEA19CAD51E005E5D57 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CE919CAD51E005E5D57 /* libz.dylib */; };
-		09AD6CEE19CAD5B4005E5D57 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CEC19CAD5B4005E5D57 /* TencentOpenAPI.framework */; };
-		09AD6CEF19CAD5B4005E5D57 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09AD6CED19CAD5B4005E5D57 /* TencentOpenApi_IOS_Bundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,39 +48,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		091D58E819CAD042006FBF58 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		091D58E919CAD042006FBF58 /* VDLoginCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoginCache.h; sourceTree = "<group>"; };
-		091D58EA19CAD042006FBF58 /* VDQQCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQCommon.h; sourceTree = "<group>"; };
-		091D58EB19CAD042006FBF58 /* VDQQManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQManager.h; sourceTree = "<group>"; };
-		091D58EC19CAD042006FBF58 /* VDQQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQMessage.h; sourceTree = "<group>"; };
-		091D58ED19CAD042006FBF58 /* VDShareAppInfoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareAppInfoUtil.h; sourceTree = "<group>"; };
-		091D58EE19CAD042006FBF58 /* VDShareCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareCommon.h; sourceTree = "<group>"; };
-		091D58EF19CAD042006FBF58 /* VDShareFileBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareFileBundle.h; sourceTree = "<group>"; };
-		091D58F019CAD042006FBF58 /* VDShareFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareFileHandle.h; sourceTree = "<group>"; };
-		091D58F119CAD042006FBF58 /* VDShareGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareGlobal.h; sourceTree = "<group>"; };
-		091D58F219CAD042006FBF58 /* VDShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareHelper.h; sourceTree = "<group>"; };
-		091D58F319CAD042006FBF58 /* VDShareLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareLoginManager.h; sourceTree = "<group>"; };
-		091D58F419CAD042006FBF58 /* VDShareMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareMacro.h; sourceTree = "<group>"; };
-		091D58F519CAD042006FBF58 /* VDShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareManager.h; sourceTree = "<group>"; };
-		091D58F619CAD042006FBF58 /* VDShareMultimediaParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareMultimediaParams.h; sourceTree = "<group>"; };
-		091D58F719CAD042006FBF58 /* VDShareParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareParam.h; sourceTree = "<group>"; };
-		091D58F819CAD042006FBF58 /* VDShareParamAddOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareParamAddOn.h; sourceTree = "<group>"; };
-		091D58F919CAD042006FBF58 /* VDShareRespParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareRespParams.h; sourceTree = "<group>"; };
-		091D58FA19CAD042006FBF58 /* VDShareSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareSynthesizeSingleton.h; sourceTree = "<group>"; };
-		091D58FB19CAD042006FBF58 /* VDShareTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareTips.h; sourceTree = "<group>"; };
-		091D58FC19CAD042006FBF58 /* VDShareWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareWindow.h; sourceTree = "<group>"; };
-		091D58FD19CAD042006FBF58 /* VDWeiboCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboCommon.h; sourceTree = "<group>"; };
-		091D58FE19CAD042006FBF58 /* VDWeiboLoginMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboLoginMessage.h; sourceTree = "<group>"; };
-		091D58FF19CAD042006FBF58 /* VDWeiboManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboManager.h; sourceTree = "<group>"; };
-		091D590019CAD042006FBF58 /* VDWeiboMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboMessage.h; sourceTree = "<group>"; };
-		091D590119CAD042006FBF58 /* VDWeiboUploadPicHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboUploadPicHelper.h; sourceTree = "<group>"; };
-		091D590219CAD042006FBF58 /* VDWXCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWXCommon.h; sourceTree = "<group>"; };
-		091D590319CAD042006FBF58 /* VDWXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWXManager.h; sourceTree = "<group>"; };
-		091D590419CAD042006FBF58 /* VDWXMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWXMessage.h; sourceTree = "<group>"; };
-		091D590519CAD042006FBF58 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		091D590619CAD042006FBF58 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		091D590719CAD042006FBF58 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		091D590819CAD042006FBF58 /* libVDShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVDShare.a; sourceTree = "<group>"; };
+		093D50AE19CAE5E600E46DDE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		093D50AF19CAE5E600E46DDE /* VDLoginCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoginCache.h; sourceTree = "<group>"; };
+		093D50B019CAE5E600E46DDE /* VDQQCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQCommon.h; sourceTree = "<group>"; };
+		093D50B119CAE5E600E46DDE /* VDQQManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQManager.h; sourceTree = "<group>"; };
+		093D50B219CAE5E600E46DDE /* VDQQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQMessage.h; sourceTree = "<group>"; };
+		093D50B319CAE5E600E46DDE /* VDShareAppInfoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareAppInfoUtil.h; sourceTree = "<group>"; };
+		093D50B419CAE5E600E46DDE /* VDShareCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareCommon.h; sourceTree = "<group>"; };
+		093D50B519CAE5E600E46DDE /* VDShareFileBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareFileBundle.h; sourceTree = "<group>"; };
+		093D50B619CAE5E600E46DDE /* VDShareFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareFileHandle.h; sourceTree = "<group>"; };
+		093D50B719CAE5E600E46DDE /* VDShareGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareGlobal.h; sourceTree = "<group>"; };
+		093D50B819CAE5E600E46DDE /* VDShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareHelper.h; sourceTree = "<group>"; };
+		093D50B919CAE5E600E46DDE /* VDShareLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareLoginManager.h; sourceTree = "<group>"; };
+		093D50BA19CAE5E600E46DDE /* VDShareMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareMacro.h; sourceTree = "<group>"; };
+		093D50BB19CAE5E600E46DDE /* VDShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareManager.h; sourceTree = "<group>"; };
+		093D50BC19CAE5E600E46DDE /* VDShareMultimediaParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareMultimediaParams.h; sourceTree = "<group>"; };
+		093D50BD19CAE5E600E46DDE /* VDShareParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareParam.h; sourceTree = "<group>"; };
+		093D50BE19CAE5E600E46DDE /* VDShareParamAddOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareParamAddOn.h; sourceTree = "<group>"; };
+		093D50BF19CAE5E600E46DDE /* VDShareRespParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareRespParams.h; sourceTree = "<group>"; };
+		093D50C019CAE5E600E46DDE /* VDShareSynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareSynthesizeSingleton.h; sourceTree = "<group>"; };
+		093D50C119CAE5E600E46DDE /* VDShareTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareTips.h; sourceTree = "<group>"; };
+		093D50C219CAE5E600E46DDE /* VDShareWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareWindow.h; sourceTree = "<group>"; };
+		093D50C319CAE5E600E46DDE /* VDWeiboCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboCommon.h; sourceTree = "<group>"; };
+		093D50C419CAE5E600E46DDE /* VDWeiboLoginMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboLoginMessage.h; sourceTree = "<group>"; };
+		093D50C519CAE5E600E46DDE /* VDWeiboManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboManager.h; sourceTree = "<group>"; };
+		093D50C619CAE5E600E46DDE /* VDWeiboMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboMessage.h; sourceTree = "<group>"; };
+		093D50C719CAE5E600E46DDE /* VDWeiboUploadPicHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeiboUploadPicHelper.h; sourceTree = "<group>"; };
+		093D50C819CAE5E600E46DDE /* VDWXCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWXCommon.h; sourceTree = "<group>"; };
+		093D50C919CAE5E600E46DDE /* VDWXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWXManager.h; sourceTree = "<group>"; };
+		093D50CA19CAE5E600E46DDE /* VDWXMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWXMessage.h; sourceTree = "<group>"; };
+		093D50CB19CAE5E600E46DDE /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		093D50CC19CAE5E600E46DDE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		093D50CD19CAE5E600E46DDE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		093D50CE19CAE5E600E46DDE /* libVDShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVDShare.a; sourceTree = "<group>"; };
+		093D50D019CAE5E600E46DDE /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		093D50D119CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		093D50D219CAE5E600E46DDE /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		093D50DA19CAE6A900E46DDE /* VDShareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareConfig.h; sourceTree = "<group>"; };
 		094F88ED19CAC85F00F2051D /* SNShareSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNShareSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094F88F019CAC85F00F2051D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		094F88F219CAC85F00F2051D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,8 +114,6 @@
 		09AD6CE519CAD510005E5D57 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		09AD6CE719CAD51A005E5D57 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		09AD6CE919CAD51E005E5D57 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		09AD6CEC19CAD5B4005E5D57 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
-		09AD6CED19CAD5B4005E5D57 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,15 +126,15 @@
 				09AD6CE619CAD510005E5D57 /* libc++.dylib in Frameworks */,
 				09AD6CE419CAD507005E5D57 /* SystemConfiguration.framework in Frameworks */,
 				09AD6CE219CAD500005E5D57 /* CoreTelephony.framework in Frameworks */,
-				09AD6CEE19CAD5B4005E5D57 /* TencentOpenAPI.framework in Frameworks */,
+				093D50D519CAE5E600E46DDE /* TencentOpenAPI.framework in Frameworks */,
 				09AD6CE019CAD4FA005E5D57 /* libiconv.dylib in Frameworks */,
 				09AD6CDE19CAD4F2005E5D57 /* MediaPlayer.framework in Frameworks */,
 				09AD6CDC19CAD4E4005E5D57 /* MobileCoreServices.framework in Frameworks */,
 				09AD6CDA19CAD4D7005E5D57 /* Security.framework in Frameworks */,
 				094F88F319CAC85F00F2051D /* CoreGraphics.framework in Frameworks */,
+				093D50D419CAE5E600E46DDE /* libVDShare.a in Frameworks */,
 				094F88F519CAC85F00F2051D /* UIKit.framework in Frameworks */,
 				094F88F119CAC85F00F2051D /* Foundation.framework in Frameworks */,
-				091D590919CAD042006FBF58 /* libVDShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,54 +151,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		091D58E619CAD042006FBF58 /* vdshare */ = {
+		093D50AB19CAE5E600E46DDE /* snshare */ = {
 			isa = PBXGroup;
 			children = (
-				09AD6CF019CAE01D005E5D57 /* ShareMonitor */,
-				09AD6CEB19CAD5B4005E5D57 /* res */,
-				091D58E719CAD042006FBF58 /* include */,
-				091D590819CAD042006FBF58 /* libVDShare.a */,
+				093D50AC19CAE5E600E46DDE /* sdk */,
+				093D50D319CAE5E600E46DDE /* ShareMonitor */,
 			);
-			path = vdshare;
+			path = snshare;
 			sourceTree = "<group>";
 		};
-		091D58E719CAD042006FBF58 /* include */ = {
+		093D50AC19CAE5E600E46DDE /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				091D58E819CAD042006FBF58 /* JSONKit.h */,
-				091D58E919CAD042006FBF58 /* VDLoginCache.h */,
-				091D58EA19CAD042006FBF58 /* VDQQCommon.h */,
-				091D58EB19CAD042006FBF58 /* VDQQManager.h */,
-				091D58EC19CAD042006FBF58 /* VDQQMessage.h */,
-				091D58ED19CAD042006FBF58 /* VDShareAppInfoUtil.h */,
-				091D58EE19CAD042006FBF58 /* VDShareCommon.h */,
-				091D58EF19CAD042006FBF58 /* VDShareFileBundle.h */,
-				091D58F019CAD042006FBF58 /* VDShareFileHandle.h */,
-				091D58F119CAD042006FBF58 /* VDShareGlobal.h */,
-				091D58F219CAD042006FBF58 /* VDShareHelper.h */,
-				091D58F319CAD042006FBF58 /* VDShareLoginManager.h */,
-				091D58F419CAD042006FBF58 /* VDShareMacro.h */,
-				091D58F519CAD042006FBF58 /* VDShareManager.h */,
-				091D58F619CAD042006FBF58 /* VDShareMultimediaParams.h */,
-				091D58F719CAD042006FBF58 /* VDShareParam.h */,
-				091D58F819CAD042006FBF58 /* VDShareParamAddOn.h */,
-				091D58F919CAD042006FBF58 /* VDShareRespParams.h */,
-				091D58FA19CAD042006FBF58 /* VDShareSynthesizeSingleton.h */,
-				091D58FB19CAD042006FBF58 /* VDShareTips.h */,
-				091D58FC19CAD042006FBF58 /* VDShareWindow.h */,
-				091D58FD19CAD042006FBF58 /* VDWeiboCommon.h */,
-				091D58FE19CAD042006FBF58 /* VDWeiboLoginMessage.h */,
-				091D58FF19CAD042006FBF58 /* VDWeiboManager.h */,
-				091D590019CAD042006FBF58 /* VDWeiboMessage.h */,
-				091D590119CAD042006FBF58 /* VDWeiboUploadPicHelper.h */,
-				091D590219CAD042006FBF58 /* VDWXCommon.h */,
-				091D590319CAD042006FBF58 /* VDWXManager.h */,
-				091D590419CAD042006FBF58 /* VDWXMessage.h */,
-				091D590519CAD042006FBF58 /* WeiboSDK.h */,
-				091D590619CAD042006FBF58 /* WXApi.h */,
-				091D590719CAD042006FBF58 /* WXApiObject.h */,
+				093D50AD19CAE5E600E46DDE /* include */,
+				093D50CE19CAE5E600E46DDE /* libVDShare.a */,
+				093D50CF19CAE5E600E46DDE /* res */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		093D50AD19CAE5E600E46DDE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				093D50AE19CAE5E600E46DDE /* JSONKit.h */,
+				093D50AF19CAE5E600E46DDE /* VDLoginCache.h */,
+				093D50B019CAE5E600E46DDE /* VDQQCommon.h */,
+				093D50B119CAE5E600E46DDE /* VDQQManager.h */,
+				093D50B219CAE5E600E46DDE /* VDQQMessage.h */,
+				093D50B319CAE5E600E46DDE /* VDShareAppInfoUtil.h */,
+				093D50B419CAE5E600E46DDE /* VDShareCommon.h */,
+				093D50B519CAE5E600E46DDE /* VDShareFileBundle.h */,
+				093D50B619CAE5E600E46DDE /* VDShareFileHandle.h */,
+				093D50B719CAE5E600E46DDE /* VDShareGlobal.h */,
+				093D50B819CAE5E600E46DDE /* VDShareHelper.h */,
+				093D50B919CAE5E600E46DDE /* VDShareLoginManager.h */,
+				093D50BA19CAE5E600E46DDE /* VDShareMacro.h */,
+				093D50BB19CAE5E600E46DDE /* VDShareManager.h */,
+				093D50BC19CAE5E600E46DDE /* VDShareMultimediaParams.h */,
+				093D50BD19CAE5E600E46DDE /* VDShareParam.h */,
+				093D50BE19CAE5E600E46DDE /* VDShareParamAddOn.h */,
+				093D50BF19CAE5E600E46DDE /* VDShareRespParams.h */,
+				093D50C019CAE5E600E46DDE /* VDShareSynthesizeSingleton.h */,
+				093D50C119CAE5E600E46DDE /* VDShareTips.h */,
+				093D50C219CAE5E600E46DDE /* VDShareWindow.h */,
+				093D50C319CAE5E600E46DDE /* VDWeiboCommon.h */,
+				093D50C419CAE5E600E46DDE /* VDWeiboLoginMessage.h */,
+				093D50C519CAE5E600E46DDE /* VDWeiboManager.h */,
+				093D50C619CAE5E600E46DDE /* VDWeiboMessage.h */,
+				093D50C719CAE5E600E46DDE /* VDWeiboUploadPicHelper.h */,
+				093D50C819CAE5E600E46DDE /* VDWXCommon.h */,
+				093D50C919CAE5E600E46DDE /* VDWXManager.h */,
+				093D50CA19CAE5E600E46DDE /* VDWXMessage.h */,
+				093D50CB19CAE5E600E46DDE /* WeiboSDK.h */,
+				093D50CC19CAE5E600E46DDE /* WXApi.h */,
+				093D50CD19CAE5E600E46DDE /* WXApiObject.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		093D50CF19CAE5E600E46DDE /* res */ = {
+			isa = PBXGroup;
+			children = (
+				093D50D019CAE5E600E46DDE /* TencentOpenAPI.framework */,
+				093D50D119CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle */,
+				093D50D219CAE5E600E46DDE /* WeiboSDK.bundle */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		093D50D319CAE5E600E46DDE /* ShareMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				093D50D819CAE69C00E46DDE /* Class */,
+				093D50D919CAE69C00E46DDE /* Config */,
+			);
+			path = ShareMonitor;
+			sourceTree = "<group>";
+		};
+		093D50D819CAE69C00E46DDE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		093D50D919CAE69C00E46DDE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				093D50DA19CAE6A900E46DDE /* VDShareConfig.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		094F88E419CAC85E00F2051D = {
@@ -240,7 +285,7 @@
 		094F88F619CAC85F00F2051D /* SNShareSDK */ = {
 			isa = PBXGroup;
 			children = (
-				091D58E619CAD042006FBF58 /* vdshare */,
+				093D50AB19CAE5E600E46DDE /* snshare */,
 				094F88FF19CAC85F00F2051D /* AppDelegate.h */,
 				094F890019CAC85F00F2051D /* AppDelegate.m */,
 				094F890219CAC85F00F2051D /* Main_iPhone.storyboard */,
@@ -280,22 +325,6 @@
 				094F891B19CAC85F00F2051D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		09AD6CEB19CAD5B4005E5D57 /* res */ = {
-			isa = PBXGroup;
-			children = (
-				09AD6CEC19CAD5B4005E5D57 /* TencentOpenAPI.framework */,
-				09AD6CED19CAD5B4005E5D57 /* TencentOpenApi_IOS_Bundle.bundle */,
-			);
-			path = res;
-			sourceTree = "<group>";
-		};
-		09AD6CF019CAE01D005E5D57 /* ShareMonitor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ShareMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,8 +406,9 @@
 				094F890719CAC85F00F2051D /* Main_iPad.storyboard in Resources */,
 				094F890C19CAC85F00F2051D /* Images.xcassets in Resources */,
 				094F890419CAC85F00F2051D /* Main_iPhone.storyboard in Resources */,
-				09AD6CEF19CAD5B4005E5D57 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				093D50D619CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				094F88FB19CAC85F00F2051D /* InfoPlist.strings in Resources */,
+				093D50D719CAE5E600E46DDE /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,21 +566,21 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SNShareSDK/vdshare/res",
+					"$(PROJECT_DIR)/SNShareSDK/snshare/sdk/res",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNShareSDK/SNShareSDK-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(SRCROOT)/SNShareSDK/vdshare/include\"",
-					"\"$(SRCROOT)/SNShareSDK/vdshare/res/TencentOpenAPI.framework/Headers\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/include\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/res/TencentOpenAPI.framework/Headers\"",
 				);
 				INFOPLIST_FILE = "SNShareSDK/SNShareSDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SNShareSDK/vdshare",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -564,21 +594,21 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SNShareSDK/vdshare/res",
+					"$(PROJECT_DIR)/SNShareSDK/snshare/sdk/res",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNShareSDK/SNShareSDK-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(SRCROOT)/SNShareSDK/vdshare/include\"",
-					"\"$(SRCROOT)/SNShareSDK/vdshare/res/TencentOpenAPI.framework/Headers\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/include\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/res/TencentOpenAPI.framework/Headers\"",
 				);
 				INFOPLIST_FILE = "SNShareSDK/SNShareSDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SNShareSDK/vdshare",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
