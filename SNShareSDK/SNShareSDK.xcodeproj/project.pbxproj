@@ -35,6 +35,7 @@
 		09AD6CE619CAD510005E5D57 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CE519CAD510005E5D57 /* libc++.dylib */; };
 		09AD6CE819CAD51A005E5D57 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CE719CAD51A005E5D57 /* libsqlite3.dylib */; };
 		09AD6CEA19CAD51E005E5D57 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD6CE919CAD51E005E5D57 /* libz.dylib */; };
+		09D0C1A319CAE9A000CA0F79 /* SNShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,6 @@
 		093D50D019CAE5E600E46DDE /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		093D50D119CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		093D50D219CAE5E600E46DDE /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
-		093D50DA19CAE6A900E46DDE /* VDShareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareConfig.h; sourceTree = "<group>"; };
 		094F88ED19CAC85F00F2051D /* SNShareSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNShareSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094F88F019CAC85F00F2051D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		094F88F219CAC85F00F2051D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +114,10 @@
 		09AD6CE519CAD510005E5D57 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		09AD6CE719CAD51A005E5D57 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		09AD6CE919CAD51E005E5D57 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		09D0C1A119CAE9A000CA0F79 /* SNShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareManager.h; sourceTree = "<group>"; };
+		09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareManager.m; sourceTree = "<group>"; };
+		09D0C1A519CAEA7D00CA0F79 /* VDShareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareConfig.h; sourceTree = "<group>"; };
+		09D0C1A619CAEAA300CA0F79 /* SNShareHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +226,8 @@
 		093D50D319CAE5E600E46DDE /* ShareMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				09D0C1A419CAEA7D00CA0F79 /* Macro */,
 				093D50D819CAE69C00E46DDE /* Class */,
-				093D50D919CAE69C00E46DDE /* Config */,
 			);
 			path = ShareMonitor;
 			sourceTree = "<group>";
@@ -231,16 +235,10 @@
 		093D50D819CAE69C00E46DDE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				09D0C1A119CAE9A000CA0F79 /* SNShareManager.h */,
+				09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		093D50D919CAE69C00E46DDE /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				093D50DA19CAE6A900E46DDE /* VDShareConfig.h */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		094F88E419CAC85E00F2051D = {
@@ -325,6 +323,15 @@
 				094F891B19CAC85F00F2051D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09D0C1A419CAEA7D00CA0F79 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				09D0C1A519CAEA7D00CA0F79 /* VDShareConfig.h */,
+				09D0C1A619CAEAA300CA0F79 /* SNShareHeaders.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D0C1A319CAE9A000CA0F79 /* SNShareManager.m in Sources */,
 				094F890A19CAC85F00F2051D /* ViewController.m in Sources */,
 				094F890119CAC85F00F2051D /* AppDelegate.m in Sources */,
 				094F88FD19CAC85F00F2051D /* main.m in Sources */,
