@@ -26,6 +26,11 @@
     [super tearDown];
 }
 
+-(void)testSth
+{
+     XCTAssert(1, @"Can not be zero");
+}
+
 - (void)testExample
 {
     XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);

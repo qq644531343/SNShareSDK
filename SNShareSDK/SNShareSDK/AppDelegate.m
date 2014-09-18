@@ -7,12 +7,58 @@
 //
 
 #import "AppDelegate.h"
+#import "VDShareManager.h"
 
 @implementation AppDelegate
+
+#pragma mark - share
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    [[VDShareManager sharedInstance] handleOpenUrl:application url:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    //分享回调
+    [[VDShareManager sharedInstance] handleOpenUrl:application url:url];
+    return YES;
+}
+
+-(void)shareConditionInit
+{
+    //分享初始化
+    [self registerShareConfig];
+    [[VDShareManager sharedInstance] registerApp];
+    
+}
+
+//设置相关的分享appkey等信息
+- (void) registerShareConfig
+{
+    //    [VDShareAppInfoUtil sharedInstance].weiboAppKey = kWeiboAppKey;
+    //    [VDShareAppInfoUtil sharedInstance].weiboAppSecret = kWeiboAppSecret;
+    //    [VDShareAppInfoUtil sharedInstance].weiboRedirectUrl = kWeiboRedirectURI;
+    
+    [VDShareAppInfoUtil sharedInstance].weixinAppID = KVDWXAppID;
+    [VDShareAppInfoUtil sharedInstance].weixinAppKey = kVDWXAppKey;
+    
+    //    [VDShareAppInfoUtil sharedInstance].mobileQQAppID = kVDQQAppID;
+    //    [VDShareAppInfoUtil sharedInstance].mobileQQAppKey = kVDQQAppKey;
+}
+
+
+#pragma mark - Other
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //分享环境初始化
+    [self performSelector:@selector(shareConditionInit) withObject:nil afterDelay:0.5];
+
+    
     return YES;
 }
 							

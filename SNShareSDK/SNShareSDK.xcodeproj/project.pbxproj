@@ -151,6 +151,7 @@
 		091D58E619CAD042006FBF58 /* vdshare */ = {
 			isa = PBXGroup;
 			children = (
+				09AD6CF019CAE01D005E5D57 /* ShareMonitor */,
 				09AD6CEB19CAD5B4005E5D57 /* res */,
 				091D58E719CAD042006FBF58 /* include */,
 				091D590819CAD042006FBF58 /* libVDShare.a */,
@@ -288,6 +289,13 @@
 				09AD6CED19CAD5B4005E5D57 /* TencentOpenApi_IOS_Bundle.bundle */,
 			);
 			path = res;
+			sourceTree = "<group>";
+		};
+		09AD6CF019CAE01D005E5D57 /* ShareMonitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShareMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
