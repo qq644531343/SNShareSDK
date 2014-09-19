@@ -40,7 +40,6 @@ SNShareSDK
 ```
 #import "SNShareHeaders.h"
 
-
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
     SNSHandle(application,url);
@@ -51,7 +50,6 @@ SNShareSDK
 {
     //分享回调
     SNSHandle(application,url);
-    
     return YES;
 }
 
@@ -60,10 +58,8 @@ SNShareSDK
     
     //分享环境初始化
     SNSInit
-    
     return YES;
 }
-
 
 @end
 
