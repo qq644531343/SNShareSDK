@@ -12,6 +12,7 @@
 #import "VDShareGlobal.h"
 #import "VDShareConfig.h"
 #import "SNShareManager.h"
+#import "SNShareModel.h"
 
 #define SNSInit {[[SNShareManager sharedSNShareManager] shareConditionInit];}
 #define SNSHandle(app,url) {[[SNShareManager sharedSNShareManager] handleOpenUrl:app url:url];}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091C0C5B19CBDCEA0083545E /* SNShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 091C0C5A19CBDCEA0083545E /* SNShareModel.m */; };
+		091C0C5D19CBDE0E0083545E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 091C0C5C19CBDE0E0083545E /* test.png */; };
 		093D50D419CAE5E600E46DDE /* libVDShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093D50CE19CAE5E600E46DDE /* libVDShare.a */; };
 		093D50D519CAE5E600E46DDE /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093D50D019CAE5E600E46DDE /* TencentOpenAPI.framework */; };
 		093D50D619CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 093D50D119CAE5E600E46DDE /* TencentOpenApi_IOS_Bundle.bundle */; };
@@ -49,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091C0C5919CBDCEA0083545E /* SNShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareModel.h; sourceTree = "<group>"; };
+		091C0C5A19CBDCEA0083545E /* SNShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareModel.m; sourceTree = "<group>"; };
+		091C0C5C19CBDE0E0083545E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		093D50AE19CAE5E600E46DDE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		093D50AF19CAE5E600E46DDE /* VDLoginCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoginCache.h; sourceTree = "<group>"; };
 		093D50B019CAE5E600E46DDE /* VDQQCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDQQCommon.h; sourceTree = "<group>"; };
@@ -237,6 +242,8 @@
 			children = (
 				09D0C1A119CAE9A000CA0F79 /* SNShareManager.h */,
 				09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */,
+				091C0C5919CBDCEA0083545E /* SNShareModel.h */,
+				091C0C5A19CBDCEA0083545E /* SNShareModel.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -310,6 +317,7 @@
 		094F891819CAC85F00F2051D /* SNShareSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				091C0C5C19CBDE0E0083545E /* test.png */,
 				094F891E19CAC85F00F2051D /* SNShareSDKTests.m */,
 				094F891919CAC85F00F2051D /* Supporting Files */,
 			);
@@ -424,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				094F891D19CAC85F00F2051D /* InfoPlist.strings in Resources */,
+				091C0C5D19CBDE0E0083545E /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D0C1A319CAE9A000CA0F79 /* SNShareManager.m in Sources */,
+				091C0C5B19CBDCEA0083545E /* SNShareModel.m in Sources */,
 				094F890A19CAC85F00F2051D /* ViewController.m in Sources */,
 				094F890119CAC85F00F2051D /* AppDelegate.m in Sources */,
 				094F88FD19CAC85F00F2051D /* main.m in Sources */,
@@ -641,7 +651,15 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode6.0.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/include\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/res/TencentOpenAPI.framework/Headers\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/include\"",
+				);
 				INFOPLIST_FILE = "SNShareSDKTests/SNShareSDKTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/SNShareSDK/snshare/sdk\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -659,7 +677,15 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNShareSDK/SNShareSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode6.0.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/include\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/res/TencentOpenAPI.framework/Headers\"",
+					"\"$(SRCROOT)/SNShareSDK/snshare/sdk/include\"",
+				);
 				INFOPLIST_FILE = "SNShareSDKTests/SNShareSDKTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/SNShareSDK/snshare/sdk\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
