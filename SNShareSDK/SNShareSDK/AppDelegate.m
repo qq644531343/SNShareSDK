@@ -9,10 +9,9 @@
 #import "AppDelegate.h"
 #import "SNShareHeaders.h"
 
-
 @implementation AppDelegate
 
-#pragma mark - handle
+#pragma mark - share handle
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
@@ -27,7 +26,6 @@
     
     return YES;
 }
-
 
 #pragma mark - main
 

@@ -25,3 +25,20 @@ SNShareSDK
 5,  找到工程的Info -> URL Types，添加对应的schema
 
 ![image](https://github.com/qq644531343/iosTool/blob/master/screenshot/shareConfigInfo.png)
+
+`注意：由于第三方sdk目前不是完全兼容 x86_64，所以用模拟器iphone5s以上编译时无法通过，但真机调试/运行是没问题的！`
+
+###代码编程指南：
+
+1, 在AppDelegate中添加如下代码：
+
+![image](https://github.com/qq644531343/iosTool/blob/master/screenshot/shareDelegateCode.png)
+
+
+
+
+
+
+
+
+
