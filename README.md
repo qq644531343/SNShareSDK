@@ -1,6 +1,11 @@
 SNShareSDK
 ==========
 
+###功能描述：
+该分享SDK支持的分享平台有：微博、朋友圈、微信好友、QQ空间、QQ好友。
+实现了分享逻辑和UI的包装，考虑到主要用于视频App中，所以支持对SVPController的控制。
+
+
 ###分享工程配置指南：
 1,  将snshare目录加入到你的工程中。
 
@@ -33,20 +38,8 @@ SNShareSDK
 1, 在AppDelegate中添加如下代码：
 
 ```
-//
-//  AppDelegate.m
-//  SNShareSDK
-//
-//  Created by libo on 9/18/14.
-//  Copyright (c) 2014 sina. All rights reserved.
-//
-
-#import "AppDelegate.h"
 #import "SNShareHeaders.h"
 
-@implementation AppDelegate
-
-#pragma mark - share handle
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
@@ -61,8 +54,6 @@ SNShareSDK
     
     return YES;
 }
-
-#pragma mark - main
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
