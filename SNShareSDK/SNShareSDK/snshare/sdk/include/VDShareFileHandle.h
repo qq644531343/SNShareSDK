@@ -3,7 +3,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VDShareFileBundle.h"
 
 typedef unsigned long long TFileSize;
 

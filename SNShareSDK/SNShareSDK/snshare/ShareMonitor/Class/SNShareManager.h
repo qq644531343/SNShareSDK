@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+//@class SNShareModel;
+
 @interface SNShareManager : NSObject
 
 +(SNShareManager *)sharedSNShareManager;
@@ -17,5 +19,8 @@
 
 //分享回调
 - (BOOL) handleOpenUrl:(UIApplication *)app url:(NSURL *)url;
+
+//设置内容数据源
+//-(NSError *)setDataModel:(SNShareModel *)model;
 
 @end

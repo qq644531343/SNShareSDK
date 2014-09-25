@@ -122,7 +122,7 @@
 		09D0C1A119CAE9A000CA0F79 /* SNShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareManager.h; sourceTree = "<group>"; };
 		09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareManager.m; sourceTree = "<group>"; };
 		09D0C1A519CAEA7D00CA0F79 /* VDShareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareConfig.h; sourceTree = "<group>"; };
-		09D0C1A619CAEAA300CA0F79 /* SNShareHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareHeaders.h; sourceTree = "<group>"; };
+		09EDFCE819CBFE2A00DA10EC /* SNShareHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				09D0C1A519CAEA7D00CA0F79 /* VDShareConfig.h */,
-				09D0C1A619CAEAA300CA0F79 /* SNShareHeaders.h */,
+				09EDFCE819CBFE2A00DA10EC /* SNShareHeaders.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
