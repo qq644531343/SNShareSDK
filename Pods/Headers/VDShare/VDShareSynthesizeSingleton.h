@@ -1,1 +1,0 @@
-../../VDShare/Lib/VDShareSynthesizeSingleton.h

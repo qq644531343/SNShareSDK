@@ -1,1 +1,0 @@
-../../VDShare/Lib/ShareTo/MobileQQ/VDQQManager.h

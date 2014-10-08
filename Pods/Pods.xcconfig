@@ -1,7 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/VDShare/Lib/ShareTo/MobileQQ/libs"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/RegexKitLite" "${PODS_ROOT}/Headers/UIDeviceIdentifier" "${PODS_ROOT}/Headers/VDLib" "${PODS_ROOT}/Headers/VDShare"
-LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/VDShare/Lib/ShareTo/SinaWeibo/libs" "$(PODS_ROOT)/VDShare/Lib/ShareTo/Weixin/libs"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/Reachability" -isystem "${PODS_ROOT}/Headers/RegexKitLite" -isystem "${PODS_ROOT}/Headers/UIDeviceIdentifier" -isystem "${PODS_ROOT}/Headers/VDLib" -isystem "${PODS_ROOT}/Headers/VDShare"
-OTHER_LDFLAGS = -ObjC -lWeChatSDK -lWeiboSDK -licucore -lsqlite3 -lstdc++ -lz -framework CFNetwork -framework CoreFoundation -framework CoreGraphics -framework CoreTelephony -framework Foundation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework TencentOpenAPI -framework UIKit
-PODS_ROOT = ${SRCROOT}/../Pods

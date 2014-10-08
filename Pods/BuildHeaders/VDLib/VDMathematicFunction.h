@@ -1,1 +1,0 @@
-../../VDLib/vdLib/lib/Utility/Math/VDMathematicFunction.h

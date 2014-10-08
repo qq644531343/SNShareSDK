@@ -1,1 +1,0 @@
-PODS_VDLIB_OTHER_LDFLAGS = -framework CFNetwork -framework CoreGraphics -framework QuartzCore -framework SystemConfiguration

@@ -1,1 +1,0 @@
-../../VDLib/vdLib/lib/Utility/Singleton/ARCSynthesizeSingleton.h

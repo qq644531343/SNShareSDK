@@ -1,1 +1,0 @@
-../../VDShare/Lib/ShareTo/SinaWeibo/VDWeiboManager.h

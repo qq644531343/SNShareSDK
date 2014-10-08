@@ -1,1 +1,0 @@
-../../VDLib/vdLib/lib/Lang/NSString+VDChinese.h

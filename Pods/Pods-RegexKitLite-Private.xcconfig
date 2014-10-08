@@ -1,5 +1,0 @@
-#include "Pods-RegexKitLite.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/RegexKitLite" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/RegexKitLite" "${PODS_ROOT}/Headers/UIDeviceIdentifier" "${PODS_ROOT}/Headers/VDLib" "${PODS_ROOT}/Headers/VDShare"
-OTHER_LDFLAGS = -ObjC ${PODS_REGEXKITLITE_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}
