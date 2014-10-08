@@ -1,0 +1,3 @@
+PODS_VDSHARE_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/VDShare/Lib/ShareTo/MobileQQ/libs"
+PODS_VDSHARE_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/VDShare/Lib/ShareTo/SinaWeibo/libs" "$(PODS_ROOT)/VDShare/Lib/ShareTo/Weixin/libs"
+PODS_VDSHARE_OTHER_LDFLAGS = -lWeChatSDK -lWeiboSDK -lsqlite3 -lstdc++ -lz -framework CFNetwork -framework CoreFoundation -framework CoreGraphics -framework CoreTelephony -framework Foundation -framework MediaPlayer -framework SystemConfiguration -framework TencentOpenAPI -framework UIKit

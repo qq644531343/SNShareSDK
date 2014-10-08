@@ -1,0 +1,1 @@
+../../VDShare/Lib/ShareTo/SinaWeibo/VDWeiboLoginMessage.h

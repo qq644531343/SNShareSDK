@@ -1,0 +1,1 @@
+../../VDShare/Lib/ShareTo/MobileQQ/libs/TencentOpenAPI.framework/Headers/TencentOAuthObject.h
