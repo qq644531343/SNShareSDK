@@ -7,20 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SNShareHeaders.h"
 
-//@class SNShareModel;
+@class SNShareModel;
 
-@interface SNShareManager : NSObject
+@interface SNShareManager : NSObject<VDShareManagerDelegate>
 
 +(SNShareManager *)sharedSNShareManager;
 
-//分享环境初始化
+/*!
+ *  @brief 分享环境初始化
+ */
 -(void)shareConditionInit;
 
-//分享回调
+/*!
+ *  @brief App分享回调
+ */
 - (BOOL) handleOpenUrl:(UIApplication *)app url:(NSURL *)url;
 
+#pragma mark - Content
+
 //设置内容数据源
-//-(NSError *)setDataModel:(SNShareModel *)model;
+-(NSError *)setDataModel:(SNShareModel *)model type:(SNShareType)atype dest:(SNShareDestination)adest;
+
+-(void)test;
 
 @end

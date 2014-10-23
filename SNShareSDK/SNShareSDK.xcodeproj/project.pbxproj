@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091C0C5B19CBDCEA0083545E /* SNShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 091C0C5A19CBDCEA0083545E /* SNShareModel.m */; };
 		091C0C5D19CBDE0E0083545E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 091C0C5C19CBDE0E0083545E /* test.png */; };
 		094F88F119CAC85F00F2051D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F88F019CAC85F00F2051D /* Foundation.framework */; };
 		094F88F319CAC85F00F2051D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F88F219CAC85F00F2051D /* CoreGraphics.framework */; };
@@ -24,7 +23,9 @@
 		094F891519CAC85F00F2051D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094F88F419CAC85F00F2051D /* UIKit.framework */; };
 		094F891D19CAC85F00F2051D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 094F891B19CAC85F00F2051D /* InfoPlist.strings */; };
 		094F891F19CAC85F00F2051D /* SNShareSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F891E19CAC85F00F2051D /* SNShareSDKTests.m */; };
-		09D0C1A319CAE9A000CA0F79 /* SNShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */; };
+		09892B2B19F89C6A00F698D8 /* SNShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09892B2619F89C6A00F698D8 /* SNShareModel.m */; };
+		09892B2C19F89C6A00F698D8 /* SNShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09892B2919F89C6A00F698D8 /* SNShareManager.m */; };
+		09B1DDD519F8AD9E004FFC5D /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B1DDD419F8AD9E004FFC5D /* app.png */; };
 		DB5EB7028B424096884C8FF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BD5E9643C4490E976C0666 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		091C0C5919CBDCEA0083545E /* SNShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareModel.h; sourceTree = "<group>"; };
-		091C0C5A19CBDCEA0083545E /* SNShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareModel.m; sourceTree = "<group>"; };
 		091C0C5C19CBDE0E0083545E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		094F88ED19CAC85F00F2051D /* SNShareSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNShareSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094F88F019CAC85F00F2051D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +61,10 @@
 		094F891A19CAC85F00F2051D /* SNShareSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNShareSDKTests-Info.plist"; sourceTree = "<group>"; };
 		094F891C19CAC85F00F2051D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		094F891E19CAC85F00F2051D /* SNShareSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNShareSDKTests.m; sourceTree = "<group>"; };
+		09892B2519F89C6A00F698D8 /* SNShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareModel.h; sourceTree = "<group>"; };
+		09892B2619F89C6A00F698D8 /* SNShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareModel.m; sourceTree = "<group>"; };
+		09892B2819F89C6A00F698D8 /* SNShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareManager.h; sourceTree = "<group>"; };
+		09892B2919F89C6A00F698D8 /* SNShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareManager.m; sourceTree = "<group>"; };
 		09AD6CD919CAD4D7005E5D57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09AD6CDB19CAD4E4005E5D57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		09AD6CDD19CAD4F2005E5D57 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -71,8 +74,7 @@
 		09AD6CE519CAD510005E5D57 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		09AD6CE719CAD51A005E5D57 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		09AD6CE919CAD51E005E5D57 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		09D0C1A119CAE9A000CA0F79 /* SNShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareManager.h; sourceTree = "<group>"; };
-		09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareManager.m; sourceTree = "<group>"; };
+		09B1DDD419F8AD9E004FFC5D /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
 		09D0C1A519CAEA7D00CA0F79 /* VDShareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareConfig.h; sourceTree = "<group>"; };
 		09EDFCE819CBFE2A00DA10EC /* SNShareHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareHeaders.h; sourceTree = "<group>"; };
 		16AF8B2D76334FE891410CB6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -124,10 +126,9 @@
 		093D50D819CAE69C00E46DDE /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				09D0C1A119CAE9A000CA0F79 /* SNShareManager.h */,
-				09D0C1A219CAE9A000CA0F79 /* SNShareManager.m */,
-				091C0C5919CBDCEA0083545E /* SNShareModel.h */,
-				091C0C5A19CBDCEA0083545E /* SNShareModel.m */,
+				09892B2419F89C6A00F698D8 /* Model */,
+				09892B2719F89C6A00F698D8 /* Service */,
+				09892B2A19F89C6A00F698D8 /* UI */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -183,6 +184,7 @@
 				094F890519CAC85F00F2051D /* Main_iPad.storyboard */,
 				094F890819CAC85F00F2051D /* ViewController.h */,
 				094F890919CAC85F00F2051D /* ViewController.m */,
+				09B1DDD419F8AD9E004FFC5D /* app.png */,
 				094F890B19CAC85F00F2051D /* Images.xcassets */,
 				094F88F719CAC85F00F2051D /* Supporting Files */,
 			);
@@ -217,6 +219,31 @@
 				094F891B19CAC85F00F2051D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09892B2419F89C6A00F698D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09892B2519F89C6A00F698D8 /* SNShareModel.h */,
+				09892B2619F89C6A00F698D8 /* SNShareModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09892B2719F89C6A00F698D8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				09892B2819F89C6A00F698D8 /* SNShareManager.h */,
+				09892B2919F89C6A00F698D8 /* SNShareManager.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		09892B2A19F89C6A00F698D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		09D0C1A419CAEA7D00CA0F79 /* Macro */ = {
@@ -308,6 +335,7 @@
 			files = (
 				094F890719CAC85F00F2051D /* Main_iPad.storyboard in Resources */,
 				094F890C19CAC85F00F2051D /* Images.xcassets in Resources */,
+				09B1DDD519F8AD9E004FFC5D /* app.png in Resources */,
 				094F890419CAC85F00F2051D /* Main_iPhone.storyboard in Resources */,
 				094F88FB19CAC85F00F2051D /* InfoPlist.strings in Resources */,
 			);
@@ -362,11 +390,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D0C1A319CAE9A000CA0F79 /* SNShareManager.m in Sources */,
-				091C0C5B19CBDCEA0083545E /* SNShareModel.m in Sources */,
 				094F890A19CAC85F00F2051D /* ViewController.m in Sources */,
 				094F890119CAC85F00F2051D /* AppDelegate.m in Sources */,
+				09892B2B19F89C6A00F698D8 /* SNShareModel.m in Sources */,
 				094F88FD19CAC85F00F2051D /* main.m in Sources */,
+				09892B2C19F89C6A00F698D8 /* SNShareManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

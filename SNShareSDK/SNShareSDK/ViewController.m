@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SNShareHeaders.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btn setTitle:@"Test" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(100, 200, 80, 50);
+    [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+-(void)test
+{
+    [[SNShareManager sharedSNShareManager] test];
 }
 
 - (void)didReceiveMemoryWarning
