@@ -27,8 +27,7 @@
 
 #pragma mark - Content
 
-//设置内容数据源
--(NSError *)setDataModel:(SNShareModel *)model;
+
 
 -(void)test;
 

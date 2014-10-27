@@ -55,11 +55,7 @@ static SNShareManager *instance = nil;
 }
 
 #pragma mark - data Manager
--(NSError *)setDataModel:(SNShareModel *)model
-{
-    NSError *error = [NSError errorWithDomain:@"VDParseCommentResultError" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:@"error", NSLocalizedDescriptionKey,nil]];
-    return error;
-}
+
 
 #pragma mark - share Handle
 

@@ -25,6 +25,8 @@
     btn.frame = CGRectMake(100, 200, 80, 50);
     [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     
+    [self SNShareDataSource];
+    
 }
 
 -(void)test
@@ -35,7 +37,10 @@
 #pragma mark - SNShareDelegate
 -(SNShareModel *)SNShareDataSource
 {
+    NSError *error = [SNShareTool checkDataModel:nil];
+    NSLog(@"%@",[error localizedDescription]);
     return nil;
+    
 }
 
 -(void)SNShareResponse:(VDShareErrCode)errCode

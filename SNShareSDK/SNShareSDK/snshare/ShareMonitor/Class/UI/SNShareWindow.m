@@ -47,7 +47,7 @@ static SNShareWindow *instance = nil;
 }
 
 
--(void)showWindowWithDelegate:(id)shareDelegate
+-(void)showWindowWithDelegate:(id<SNShareDelegate>)shareDelegate
 {
     _shareDelegate = shareDelegate;
 }

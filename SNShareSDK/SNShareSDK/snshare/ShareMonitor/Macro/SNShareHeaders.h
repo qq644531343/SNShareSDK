@@ -14,6 +14,7 @@
  */
 typedef enum SNShareType
 {
+    SNShareTypeUnknown,
     SNShareTypeNomarl,      //普通模式
     SNShareTypeVideo,       //视频模式
     SNShareTypeAudio        //音频模式
@@ -25,6 +26,7 @@ typedef enum SNShareType
  */
 typedef enum SNShareDestination
 {
+    SNShareDestinationUnknown,
     SNShareDestinationQQFriend,         //QQ好友
     SNShareDestinationQQZone,           //QQ空间
     SNShareDestinationWeixinFriend,     //微信好友
@@ -37,6 +39,7 @@ typedef enum SNShareDestination
 
 #import "SNShareModel.h"
 #import "SNShareManager.h"
+#import "SNShareTool.h"
 
 #import "SNShareWindow.h"
 #import "SNShareView.h"

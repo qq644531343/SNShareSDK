@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SNShareDelegate.h"
 
 @interface SNShareWindow : UIWindow
 {
-    id _shareDelegate;
+    id<SNShareDelegate> _shareDelegate;
 }
 
 +(SNShareWindow *)sharedSNShareWindow;
 
--(void)showWindowWithDelegate:(id)shareDelegate;
+-(void)showWindowWithDelegate:(id<SNShareDelegate>) shareDelegate;
 
 @end

@@ -31,5 +31,9 @@
 *  使用多图接口传多图到新浪微博
 */
 @property (nonatomic,retain) VDShareParamAddOn *addOn;
+/*!
+ *  @brief  允许微博发送多图，默认为NO
+ */
+@property (nonatomic,readwrite) BOOL supportMutableImgForWeibo;
 
 @end

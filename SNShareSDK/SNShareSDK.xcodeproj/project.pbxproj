@@ -32,6 +32,7 @@
 		09AA66B919FE33A6004F7128 /* share_weixin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA66B419FE33A6004F7128 /* share_weixin@2x.png */; };
 		09AA66BC19FE33BA004F7128 /* SNShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AA66BB19FE33BA004F7128 /* SNShareView.m */; };
 		09AA66BF19FE33CE004F7128 /* SNShareWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AA66BE19FE33CE004F7128 /* SNShareWindow.m */; };
+		09AA66C319FE4651004F7128 /* SNShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AA66C219FE4651004F7128 /* SNShareTool.m */; };
 		09B1DDD519F8AD9E004FFC5D /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B1DDD419F8AD9E004FFC5D /* app.png */; };
 		DB5EB7028B424096884C8FF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BD5E9643C4490E976C0666 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,8 @@
 		09AA66BD19FE33CE004F7128 /* SNShareWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareWindow.h; sourceTree = "<group>"; };
 		09AA66BE19FE33CE004F7128 /* SNShareWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareWindow.m; sourceTree = "<group>"; };
 		09AA66C019FE3B7F004F7128 /* SNShareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareDelegate.h; sourceTree = "<group>"; };
+		09AA66C119FE4651004F7128 /* SNShareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareTool.h; sourceTree = "<group>"; };
+		09AA66C219FE4651004F7128 /* SNShareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareTool.m; sourceTree = "<group>"; };
 		09AD6CD919CAD4D7005E5D57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09AD6CDB19CAD4E4005E5D57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		09AD6CDD19CAD4F2005E5D57 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -256,6 +259,8 @@
 			children = (
 				09892B2819F89C6A00F698D8 /* SNShareManager.h */,
 				09892B2919F89C6A00F698D8 /* SNShareManager.m */,
+				09AA66C119FE4651004F7128 /* SNShareTool.h */,
+				09AA66C219FE4651004F7128 /* SNShareTool.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 			files = (
 				094F890A19CAC85F00F2051D /* ViewController.m in Sources */,
 				09AA66BF19FE33CE004F7128 /* SNShareWindow.m in Sources */,
+				09AA66C319FE4651004F7128 /* SNShareTool.m in Sources */,
 				094F890119CAC85F00F2051D /* AppDelegate.m in Sources */,
 				09892B2B19F89C6A00F698D8 /* SNShareModel.m in Sources */,
 				09AA66BC19FE33BA004F7128 /* SNShareView.m in Sources */,
