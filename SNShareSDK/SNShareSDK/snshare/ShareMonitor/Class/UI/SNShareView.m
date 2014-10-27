@@ -8,6 +8,26 @@
 
 #import "SNShareView.h"
 
+@interface SNShareView ()
+
+//@property (nonatomic,strong) 
+
+@end
+
 @implementation SNShareView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+    }
+    return self;
+}
+
+-(void)setDisplayType:(SNShareViewDisplayType)displayType
+{
+    _displayType = displayType;
+}
 
 @end
