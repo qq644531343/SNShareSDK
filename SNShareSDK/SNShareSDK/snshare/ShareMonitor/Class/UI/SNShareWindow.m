@@ -67,12 +67,12 @@ static SNShareWindow *instance = nil;
     if ([[noti.userInfo valueForKey:UIApplicationStatusBarOrientationUserInfoKey] intValue] == 4) {
         [UIView setAnimationDuration:0.5];
     }
-   
+    
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if (orientation == UIInterfaceOrientationPortrait)
     {
         self.transform = CGAffineTransformIdentity;
-         self.transform = CGAffineTransformMakeRotation(degreesToRadians(0));
+        self.transform = CGAffineTransformMakeRotation(degreesToRadians(0));
     }else if(orientation == UIInterfaceOrientationLandscapeLeft)
     {
         
