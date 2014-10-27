@@ -30,7 +30,8 @@
 
 -(void)test
 {
-    [[SNShareManager sharedSNShareManager] test];
+//    [[SNShareManager sharedSNShareManager] test];
+    SNSShow(self)
 }
 
 - (void)didReceiveMemoryWarning

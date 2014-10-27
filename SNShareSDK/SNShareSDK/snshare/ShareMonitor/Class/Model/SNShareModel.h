@@ -7,6 +7,7 @@
 //
 
 #import "VDShareParam.h"
+#import "SNShareHeaders.h"
 
 @interface SNShareModel : VDShareParam
 
