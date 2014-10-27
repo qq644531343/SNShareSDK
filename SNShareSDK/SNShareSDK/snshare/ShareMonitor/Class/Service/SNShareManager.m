@@ -120,10 +120,6 @@ static SNShareManager *instance = nil;
 }
 
 #pragma mark - VDShareManagerDelegate
-- (void) onShareRequest:(BOOL) isOK respData:(VDShareRespBase *) respData {
-    
-    DLog(@"onShareRequest:%@",respData);
-}
 
 -(void)onShareResponse2:(VDShareErrCode)errCode {
     

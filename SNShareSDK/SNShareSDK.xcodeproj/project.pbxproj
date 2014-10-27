@@ -25,6 +25,13 @@
 		094F891F19CAC85F00F2051D /* SNShareSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F891E19CAC85F00F2051D /* SNShareSDKTests.m */; };
 		09892B2B19F89C6A00F698D8 /* SNShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09892B2619F89C6A00F698D8 /* SNShareModel.m */; };
 		09892B2C19F89C6A00F698D8 /* SNShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09892B2919F89C6A00F698D8 /* SNShareManager.m */; };
+		09AA66B519FE33A6004F7128 /* share_pengyouquan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA66B019FE33A6004F7128 /* share_pengyouquan@2x.png */; };
+		09AA66B619FE33A6004F7128 /* share_qqweibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA66B119FE33A6004F7128 /* share_qqweibo@2x.png */; };
+		09AA66B719FE33A6004F7128 /* share_qqzone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA66B219FE33A6004F7128 /* share_qqzone@2x.png */; };
+		09AA66B819FE33A6004F7128 /* share_sinaweibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA66B319FE33A6004F7128 /* share_sinaweibo@2x.png */; };
+		09AA66B919FE33A6004F7128 /* share_weixin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AA66B419FE33A6004F7128 /* share_weixin@2x.png */; };
+		09AA66BC19FE33BA004F7128 /* SNShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AA66BB19FE33BA004F7128 /* SNShareView.m */; };
+		09AA66BF19FE33CE004F7128 /* SNShareWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AA66BE19FE33CE004F7128 /* SNShareWindow.m */; };
 		09B1DDD519F8AD9E004FFC5D /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B1DDD419F8AD9E004FFC5D /* app.png */; };
 		DB5EB7028B424096884C8FF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BD5E9643C4490E976C0666 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +72,15 @@
 		09892B2619F89C6A00F698D8 /* SNShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareModel.m; sourceTree = "<group>"; };
 		09892B2819F89C6A00F698D8 /* SNShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareManager.h; sourceTree = "<group>"; };
 		09892B2919F89C6A00F698D8 /* SNShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareManager.m; sourceTree = "<group>"; };
+		09AA66B019FE33A6004F7128 /* share_pengyouquan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_pengyouquan@2x.png"; sourceTree = "<group>"; };
+		09AA66B119FE33A6004F7128 /* share_qqweibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_qqweibo@2x.png"; sourceTree = "<group>"; };
+		09AA66B219FE33A6004F7128 /* share_qqzone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_qqzone@2x.png"; sourceTree = "<group>"; };
+		09AA66B319FE33A6004F7128 /* share_sinaweibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_sinaweibo@2x.png"; sourceTree = "<group>"; };
+		09AA66B419FE33A6004F7128 /* share_weixin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_weixin@2x.png"; sourceTree = "<group>"; };
+		09AA66BA19FE33BA004F7128 /* SNShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareView.h; sourceTree = "<group>"; };
+		09AA66BB19FE33BA004F7128 /* SNShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareView.m; sourceTree = "<group>"; };
+		09AA66BD19FE33CE004F7128 /* SNShareWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareWindow.h; sourceTree = "<group>"; };
+		09AA66BE19FE33CE004F7128 /* SNShareWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareWindow.m; sourceTree = "<group>"; };
 		09AD6CD919CAD4D7005E5D57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09AD6CDB19CAD4E4005E5D57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		09AD6CDD19CAD4F2005E5D57 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -77,8 +93,9 @@
 		09B1DDD419F8AD9E004FFC5D /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
 		09D0C1A519CAEA7D00CA0F79 /* VDShareConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDShareConfig.h; sourceTree = "<group>"; };
 		09EDFCE819CBFE2A00DA10EC /* SNShareHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareHeaders.h; sourceTree = "<group>"; };
-		16AF8B2D76334FE891410CB6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		49BD5E9643C4490E976C0666 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		637196F4CABB69533D3940DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ECBB6215D18973DF7CBF6E99 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +134,7 @@
 		093D50D319CAE5E600E46DDE /* ShareMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				09AA66AF19FE336F004F7128 /* Resource */,
 				09D0C1A419CAEA7D00CA0F79 /* Macro */,
 				093D50D819CAE69C00E46DDE /* Class */,
 			);
@@ -126,6 +144,7 @@
 		093D50D819CAE69C00E46DDE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				09AA66AE19FE3368004F7128 /* UI */,
 				09892B2419F89C6A00F698D8 /* Model */,
 				09892B2719F89C6A00F698D8 /* Service */,
 				09892B2A19F89C6A00F698D8 /* UI */,
@@ -140,7 +159,7 @@
 				094F891819CAC85F00F2051D /* SNShareSDKTests */,
 				094F88EF19CAC85F00F2051D /* Frameworks */,
 				094F88EE19CAC85F00F2051D /* Products */,
-				16AF8B2D76334FE891410CB6 /* Pods.xcconfig */,
+				E27B4D3DA5DD83E7AED7788F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +265,29 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		09AA66AE19FE3368004F7128 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				09AA66BA19FE33BA004F7128 /* SNShareView.h */,
+				09AA66BB19FE33BA004F7128 /* SNShareView.m */,
+				09AA66BD19FE33CE004F7128 /* SNShareWindow.h */,
+				09AA66BE19FE33CE004F7128 /* SNShareWindow.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		09AA66AF19FE336F004F7128 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				09AA66B019FE33A6004F7128 /* share_pengyouquan@2x.png */,
+				09AA66B119FE33A6004F7128 /* share_qqweibo@2x.png */,
+				09AA66B219FE33A6004F7128 /* share_qqzone@2x.png */,
+				09AA66B319FE33A6004F7128 /* share_sinaweibo@2x.png */,
+				09AA66B419FE33A6004F7128 /* share_weixin@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		09D0C1A419CAEA7D00CA0F79 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +295,15 @@
 				09EDFCE819CBFE2A00DA10EC /* SNShareHeaders.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		E27B4D3DA5DD83E7AED7788F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECBB6215D18973DF7CBF6E99 /* Pods.debug.xcconfig */,
+				637196F4CABB69533D3940DE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,9 +384,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09AA66B919FE33A6004F7128 /* share_weixin@2x.png in Resources */,
+				09AA66B719FE33A6004F7128 /* share_qqzone@2x.png in Resources */,
+				09AA66B819FE33A6004F7128 /* share_sinaweibo@2x.png in Resources */,
 				094F890719CAC85F00F2051D /* Main_iPad.storyboard in Resources */,
+				09AA66B519FE33A6004F7128 /* share_pengyouquan@2x.png in Resources */,
 				094F890C19CAC85F00F2051D /* Images.xcassets in Resources */,
 				09B1DDD519F8AD9E004FFC5D /* app.png in Resources */,
+				09AA66B619FE33A6004F7128 /* share_qqweibo@2x.png in Resources */,
 				094F890419CAC85F00F2051D /* Main_iPhone.storyboard in Resources */,
 				094F88FB19CAC85F00F2051D /* InfoPlist.strings in Resources */,
 			);
@@ -365,7 +421,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CB76E524A0C8492B86036FE6 /* Check Pods Manifest.lock */ = {
@@ -391,8 +447,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				094F890A19CAC85F00F2051D /* ViewController.m in Sources */,
+				09AA66BF19FE33CE004F7128 /* SNShareWindow.m in Sources */,
 				094F890119CAC85F00F2051D /* AppDelegate.m in Sources */,
 				09892B2B19F89C6A00F698D8 /* SNShareModel.m in Sources */,
+				09AA66BC19FE33BA004F7128 /* SNShareView.m in Sources */,
 				094F88FD19CAC85F00F2051D /* main.m in Sources */,
 				09892B2C19F89C6A00F698D8 /* SNShareManager.m in Sources */,
 			);
@@ -526,7 +584,7 @@
 		};
 		094F892319CAC85F00F2051D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16AF8B2D76334FE891410CB6 /* Pods.xcconfig */;
+			baseConfigurationReference = ECBB6215D18973DF7CBF6E99 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -549,7 +607,7 @@
 		};
 		094F892419CAC85F00F2051D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16AF8B2D76334FE891410CB6 /* Pods.xcconfig */;
+			baseConfigurationReference = 637196F4CABB69533D3940DE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
