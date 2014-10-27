@@ -15,4 +15,11 @@
  */
 +(NSError *)checkDataModel:(SNShareModel *)model;
 
+/*!
+ *  @brief  解析分享结果
+ *  @param errCode 分享返回码
+ *  @return 返回对应的明文字符串
+ */
++(NSString *)parseResponseCode:(VDShareErrCode)errCode;
+
 @end

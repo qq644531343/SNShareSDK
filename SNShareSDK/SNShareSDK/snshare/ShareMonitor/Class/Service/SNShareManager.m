@@ -119,63 +119,7 @@ static SNShareManager *instance = nil;
 
 -(void)onShareResponse2:(VDShareErrCode)errCode {
     
-    DLog(@"分享Code:%d",errCode);
-    NSString *msg = nil;
-    switch (errCode) {
-        case VDShareErrCodeNoErr:
-        {
-            msg = @"分享成功";
-            break;
-        }
-        case VDShareErrCodeCommonErr:
-        {
-            msg = @"未知错误";
-            break;
-        }
-        case VDShareErrCodeUserCancel:
-        {
-            msg = @"取消分享";
-            break;
-            
-        }
-        case VDShareErrCodeSendErr:
-        {
-            msg = @"分享失败";
-            break;
-        }
-        case VDShareErrCodeAuthDeny:
-        {
-            msg = @"请重新登录";
-            break;
-        }
-        case VDShareErrCodeUnsupport:
-        {
-            msg = @"客户端不支持";
-            break;
-            
-        }
-        case VDShareErrCodeImgIsNil:
-        {
-            msg = @"图片为空";
-            break;
-            
-        }
-        case VDShareErrCodeAttachmentOversize:
-        {
-            msg = @"附件过大";
-            break;
-            
-        }
-        case VDShareErrCodeAPPNotInstalled:
-        {
-            msg = @"请安装客户端";
-            break;
-            
-        }
-        default:
-            break;
-    }
-    
+    NSString *msg = [SNShareTool parseResponseCode:errCode];
     [ALToastView toastInView:[UIApplication sharedApplication].keyWindow withText:msg];
 
 }

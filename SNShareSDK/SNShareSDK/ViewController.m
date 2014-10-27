@@ -43,7 +43,7 @@
     
 }
 
--(void)SNShareResponse:(VDShareErrCode)errCode
+-(void)SNShareResponse:(VDShareErrCode)errCode Msg:(NSString *)msg
 {
     
 }

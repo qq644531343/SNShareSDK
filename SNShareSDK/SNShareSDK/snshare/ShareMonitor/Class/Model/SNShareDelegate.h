@@ -23,7 +23,7 @@
  *  @brief  分享结果
  *  @param errCode 参看 VDShareErrCode
  */
--(void)SNShareResponse:(VDShareErrCode)errCode;
+-(void)SNShareResponse:(VDShareErrCode)errCode Msg:(NSString *)msg;
 
 @end
 
