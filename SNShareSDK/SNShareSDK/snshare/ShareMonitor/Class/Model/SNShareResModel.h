@@ -8,11 +8,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SNShareHeaders.h"
 
 @interface SNShareResModel : NSObject
 
 @property (nonatomic,strong) NSString *img;
 @property (nonatomic,strong) NSString *type;
 @property (nonatomic,strong) NSString *title;
+
+-(SNShareType)getType;
 
 @end

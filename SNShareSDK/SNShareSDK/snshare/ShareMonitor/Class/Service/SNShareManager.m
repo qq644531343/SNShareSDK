@@ -8,6 +8,7 @@
 
 #import "SNShareManager.h"
 #import "SNShareHeaders.h"
+#import "SNShareResModel.h"
 
 #import "ALToastView.h"
 
@@ -38,6 +39,8 @@ static SNShareManager *instance = nil;
     //分享初始化
     [self registerShareConfig];
     [[VDShareManager sharedInstance] registerApp];
+    
+    [self loadResource];
     [SNShareWindow sharedSNShareWindow];
 }
 
@@ -56,7 +59,18 @@ static SNShareManager *instance = nil;
 }
 
 #pragma mark - data Manager
-
+-(void)loadResource
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"snsres" ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    
+    NSMutableArray *res = [[NSMutableArray alloc] init];
+    for (NSDictionary *item in array) {
+        SNShareResModel *model = [[SNShareResModel alloc] init];
+        
+    }
+    
+}
 
 #pragma mark - share Handle
 

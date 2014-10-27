@@ -26,7 +26,10 @@
 - (BOOL) handleOpenUrl:(UIApplication *)app url:(NSURL *)url;
 
 #pragma mark - Content
-
+/*!
+ *  @brief  存放分享的初始化素材
+ */
+@property (nonatomic,strong) NSArray *resourceArray;
 
 
 -(void)test;
