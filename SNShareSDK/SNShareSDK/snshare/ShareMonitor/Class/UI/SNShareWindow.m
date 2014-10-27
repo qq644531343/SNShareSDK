@@ -33,6 +33,7 @@ static SNShareWindow *instance = nil;
                 
                 [[NSNotificationCenter defaultCenter] addObserver:instance selector:@selector(rotation:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
                 
+                instance.hidden = YES;
                 instance.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.3];
                 
                 UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -50,6 +51,7 @@ static SNShareWindow *instance = nil;
 -(void)showWindowWithDelegate:(id<SNShareDelegate>)shareDelegate
 {
     _shareDelegate = shareDelegate;
+    self.hidden = NO;
 }
 
 

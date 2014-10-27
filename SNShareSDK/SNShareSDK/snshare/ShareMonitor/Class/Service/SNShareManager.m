@@ -38,6 +38,7 @@ static SNShareManager *instance = nil;
     //分享初始化
     [self registerShareConfig];
     [[VDShareManager sharedInstance] registerApp];
+    [SNShareWindow sharedSNShareWindow];
 }
 
 //设置相关的分享appkey等信息
