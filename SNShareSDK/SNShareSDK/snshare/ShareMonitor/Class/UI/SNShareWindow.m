@@ -92,7 +92,6 @@ static SNShareWindow *instance = nil;
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if (UIInterfaceOrientationIsLandscape(orientation)) {
         self.bounds = CGRectMake(0, 0, _screenFrame.size.height, _screenFrame.size.width);
-        NSLog(@"%@",NSStringFromCGRect(self.frame));
     }else {
         self.bounds = CGRectMake(0, 0, _screenFrame.size.width, _screenFrame.size.height);
     }

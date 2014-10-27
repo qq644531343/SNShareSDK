@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SNShareHeaders.h"
 
-@interface ViewController ()
+@interface ViewController ()<SNShareDelegate>
 
 @end
 
@@ -18,8 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [btn setTitle:@"Test" forState:UIControlStateNormal];
     [self.view addSubview:btn];
@@ -30,14 +29,18 @@
 
 -(void)test
 {
-//    [[SNShareManager sharedSNShareManager] test];
-    SNSShow(self)
+    SNShareShow(self)
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - SNShareDelegate
+-(SNShareModel *)SNShareDataSource
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return nil;
+}
+
+-(void)SNShareResponse:(VDShareErrCode)errCode
+{
+    
 }
 
 @end

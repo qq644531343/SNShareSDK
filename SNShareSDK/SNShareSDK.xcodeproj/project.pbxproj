@@ -81,6 +81,7 @@
 		09AA66BB19FE33BA004F7128 /* SNShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareView.m; sourceTree = "<group>"; };
 		09AA66BD19FE33CE004F7128 /* SNShareWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareWindow.h; sourceTree = "<group>"; };
 		09AA66BE19FE33CE004F7128 /* SNShareWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNShareWindow.m; sourceTree = "<group>"; };
+		09AA66C019FE3B7F004F7128 /* SNShareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNShareDelegate.h; sourceTree = "<group>"; };
 		09AD6CD919CAD4D7005E5D57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09AD6CDB19CAD4E4005E5D57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		09AD6CDD19CAD4F2005E5D57 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -245,6 +246,7 @@
 			children = (
 				09892B2519F89C6A00F698D8 /* SNShareModel.h */,
 				09892B2619F89C6A00F698D8 /* SNShareModel.m */,
+				09AA66C019FE3B7F004F7128 /* SNShareDelegate.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";

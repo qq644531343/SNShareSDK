@@ -41,6 +41,8 @@ typedef enum SNShareDestination
 #import "SNShareWindow.h"
 #import "SNShareView.h"
 
+#import "SNShareDelegate.h"
+
 /*!
  *  @brief 分享初始化
  */
@@ -54,6 +56,6 @@ typedef enum SNShareDestination
 /*!
  *  @brief  显示分享及设置代理
  */
-#define SNSShow(delegate) {[[SNShareWindow sharedSNShareWindow] showWindowWithDelegate:delegate];}
+#define SNShareShow(delegate) {[[SNShareWindow sharedSNShareWindow] showWindowWithDelegate:delegate];}
 
 #endif
