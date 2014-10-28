@@ -100,6 +100,31 @@
     return msg;
 }
 
++(SNShareDestination)getShareDest:(NSString *)dest
+{
+    SNShareDestination d = SNShareDestinationUnknown;
+    if (dest.length > 0) {
+        if ([dest isEqualToString:@"SNShareDestinationQQFriend"]) {
+            d = SNShareDestinationQQFriend;
+        }else if([dest isEqualToString:@"SNShareDestinationQQZone"])
+        {
+            d = SNShareDestinationQQZone;
+        }
+        else if([dest isEqualToString:@"SNShareDestinationWeixinFriend"])
+        {
+            d = SNShareDestinationWeixinFriend;
+        }
+        else if([dest isEqualToString:@"SNShareDestinationWeixinMoments"])
+        {
+            d = SNShareDestinationWeixinMoments;
+        }
+        else if([dest isEqualToString:@"SNShareDestinationWeibo"])
+        {
+            d = SNShareDestinationWeibo;
+        }
+    }
+    return d;
+}
 
 
 @end

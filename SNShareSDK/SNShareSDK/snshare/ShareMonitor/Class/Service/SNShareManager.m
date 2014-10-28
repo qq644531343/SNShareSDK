@@ -67,9 +67,12 @@ static SNShareManager *instance = nil;
     NSMutableArray *res = [[NSMutableArray alloc] init];
     for (NSDictionary *item in array) {
         SNShareResModel *model = [[SNShareResModel alloc] init];
-        
+        model.title = [item objectForKey:@"title"];
+        model.dest = [SNShareTool getShareDest:[item objectForKey:@"dest"]];
+        model.img = [item objectForKey:@"img"];
+        [res addObject:model];
     }
-    
+    _resourceArray = [NSArray arrayWithArray:res];
 }
 
 #pragma mark - share Handle

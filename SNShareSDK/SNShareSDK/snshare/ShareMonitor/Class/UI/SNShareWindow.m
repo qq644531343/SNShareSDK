@@ -7,6 +7,7 @@
 //
 
 #import "SNShareWindow.h"
+#import "SNShareView.h"
 
 @interface SNShareWindow ()
 
@@ -36,11 +37,9 @@ static SNShareWindow *instance = nil;
                 instance.hidden = YES;
                 instance.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.3];
                 
-                UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-                btn.frame = CGRectMake(0, 50, 200, 200);
-                [btn setTitle:@"Test" forState:UIControlStateNormal];
-                btn.titleLabel.font = [UIFont systemFontOfSize:48];
-                [instance addSubview:btn];
+                SNShareView *view = [[SNShareView alloc] initWithFrame:CGRectMake(0, 100, 320, 280)];
+                //view.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5];
+                [instance addSubview:view];
             }
         }
     }
@@ -64,6 +63,7 @@ static SNShareWindow *instance = nil;
 #define degreesToRadians(x) (M_PI*(x)/180.0)
 -(void)rotation:(NSNotification *)noti
 {
+    
     [UIView beginAnimations:@"rotation" context:nil];
     [UIView setAnimationDuration:0.25];
     if ([[noti.userInfo valueForKey:UIApplicationStatusBarOrientationUserInfoKey] intValue] == 4) {

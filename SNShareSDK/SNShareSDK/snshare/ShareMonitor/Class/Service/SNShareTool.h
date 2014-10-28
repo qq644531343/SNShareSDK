@@ -22,4 +22,9 @@
  */
 +(NSString *)parseResponseCode:(VDShareErrCode)errCode;
 
+/*!
+ *  @brief  根据字符串解析出对应的SNShareDest枚举值
+ */
++(SNShareDestination)getShareDest:(NSString *)dest;
+
 @end

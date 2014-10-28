@@ -612,6 +612,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/SNShareSDK/snshare/ShareMonitor/Macro/SNShareHeaders.h\"",
 				);
 				INFOPLIST_FILE = "SNShareSDK/SNShareSDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
@@ -635,6 +636,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/SNShareSDK/snshare/ShareMonitor/Macro/SNShareHeaders.h\"",
 				);
 				INFOPLIST_FILE = "SNShareSDK/SNShareSDK-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;

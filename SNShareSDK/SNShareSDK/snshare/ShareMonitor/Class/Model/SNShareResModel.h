@@ -13,9 +13,7 @@
 @interface SNShareResModel : NSObject
 
 @property (nonatomic,strong) NSString *img;
-@property (nonatomic,strong) NSString *type;
+@property (nonatomic,readwrite) SNShareDestination dest;
 @property (nonatomic,strong) NSString *title;
-
--(SNShareType)getType;
 
 @end
