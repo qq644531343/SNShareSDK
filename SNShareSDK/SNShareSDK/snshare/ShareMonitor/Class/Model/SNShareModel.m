@@ -10,4 +10,6 @@
 
 @implementation SNShareModel
 
+@synthesize description;
+
 @end

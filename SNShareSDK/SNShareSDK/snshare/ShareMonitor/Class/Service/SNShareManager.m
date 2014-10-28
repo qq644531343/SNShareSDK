@@ -106,7 +106,7 @@ static SNShareManager *instance = nil;
     id<SNShareDelegate> delegate = [SNShareWindow sharedSNShareWindow].shareDelegate;
     if ([delegate respondsToSelector:@selector(SNShareDataSource)]) {
         data = [delegate SNShareDataSource];
-        if ( 0 && data == nil) {
+        if (data == nil) {
             return;
         }
     }

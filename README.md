@@ -9,25 +9,13 @@ SNShareSDK
 ###分享工程配置指南：
 1,  将snshare目录加入到你的工程中。
 
-2,  添加如下系统库:
+2,  添加如下Podfile项目:
 
-![image](https://github.com/qq644531343/iosTool/blob/master/screenshot/share.png)
+pod 'VDShare', :svn => 'https://svn1.intra.sina.com.cn/sinavideo_app/ios/VideoDept_V2.0/VDShare'
 
-3,  将目录中TencentOpenApi.framework拖到Build Phases -> Libarary中
-确保Build Phases -> Resource中含有TencentOpenApi_iOS_Bundle.bundle文件
-
-4,  找到工程的Build Settings -> Search Paths，确保含有如下信息：
-	
-	    		
-    	* Framework Search Path栏含有  $(PROJECT_DIR)/SNShareSDK/snshare/res
-		* Header Search Path栏含有：
-		    "$(SRCROOT)/SNShareSDK/snshare/sdk/include"
-		    "$(SRCROOT)/SNShareSDK/snshare/sdk/res/TencentOpenAPI.framework/Headers"
-		* Library Search Path含有："$(SRCROOT)/SNShareSDK/snshare/sdk"
-	
-	其中SNShareSDK为你工程目录名，路径为你的相对路径即可，确保含有上述项目即可。
-      
-5,  找到工程的Info -> URL Types，添加对应的schema
+pod 'VDLib', :svn => 'http://svn1.intra.sina.com.cn/sinavideo_app/ios/VideoDept_V2.0/VDLib'   
+   
+3,  找到工程的Info -> URL Types，添加对应的schema
 
 ![image](https://github.com/qq644531343/iosTool/blob/master/screenshot/shareConfigInfo.png)
 
@@ -66,6 +54,50 @@ SNShareSDK
 ```
 
 
+###使用
+```
+引入头文件#import "SNShareHeaders.h"
+实现SNShareDelegate
 
 
+#pragma mark - SNShareDelegate
+-(SNShareModel *)SNShareDataSource
+{
+    SNShareModel *model = [[SNShareModel alloc] init];
+    model.title = @"hello";
+    model.description = @"world";
+    model.image = [UIImage imageNamed:@"app.png"];
+    model.imgUrl = @"http://img0.bdstatic.com/img/image/shouye/mxlyf-9632102318.jpg";
+    model.videoID = @"1234";
+    model.url = @"http://video.sina.com.cn/app";
+    
+    VDShareVideoParam *videoParam = [[VDShareVideoParam alloc] init];
+    videoParam.videoUrl = @"http://video.sina.com.cn/app";
+    model.videoParams = videoParam;
+
+    
+    NSError *error = [SNShareTool checkDataModel:model];
+    DLog(@"%@",[error localizedDescription]);
+    
+    if (0 && error) {
+        return nil;
+    }else {
+        return model;
+    }
+    
+}
+
+-(void)SNShareResponse:(VDShareErrCode)errCode Msg:(NSString *)msg
+{
+    DLog(@"%@",msg);
+}
+
+／／调用：
+-(void)enterShareClick
+{
+    SNShareShow(self)
+}
+
+
+```
 

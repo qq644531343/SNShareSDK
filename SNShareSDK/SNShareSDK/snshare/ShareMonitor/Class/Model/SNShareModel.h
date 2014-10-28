@@ -9,7 +9,7 @@
 #import "VDShareParam.h"
 #import "SNShareHeaders.h"
 
-@interface SNShareModel : VDShareParam
+@interface SNShareModel : NSObject
 
 /*!
  *  @brief  必选参数: shareType和shareDest
@@ -23,8 +23,8 @@
 @property (nonatomic, retain) NSString  *imgUrl;
 @property (nonatomic, retain) UIImage   *image;
 
-@property (nonatomic,retain)  VDShareVideoParam *videoUrl;
-@property (nonatomic,retain) VDShareAudioParam *audioUrl;
+@property (nonatomic,retain)  VDShareVideoParam *videoParams;
+@property (nonatomic,retain) VDShareAudioParam *audioParams;
 @property (nonatomic, copy)   NSString* videoID;
 
 /*!

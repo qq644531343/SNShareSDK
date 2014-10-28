@@ -37,9 +37,27 @@
 #pragma mark - SNShareDelegate
 -(SNShareModel *)SNShareDataSource
 {
-    NSError *error = [SNShareTool checkDataModel:nil];
+    SNShareModel *model = [[SNShareModel alloc] init];
+    model.title = @"hello";
+    model.description = @"world";
+    model.image = [UIImage imageNamed:@"app.png"];
+    model.imgUrl = @"http://img0.bdstatic.com/img/image/shouye/mxlyf-9632102318.jpg";
+    model.videoID = @"1234";
+    model.url = @"http://video.sina.com.cn/app";
+    
+    VDShareVideoParam *videoParam = [[VDShareVideoParam alloc] init];
+    videoParam.videoUrl = @"http://video.sina.com.cn/app";
+    model.videoParams = videoParam;
+
+    
+    NSError *error = [SNShareTool checkDataModel:model];
     DLog(@"%@",[error localizedDescription]);
-    return nil;
+    
+    if (0 && error) {
+        return nil;
+    }else {
+        return model;
+    }
     
 }
 
