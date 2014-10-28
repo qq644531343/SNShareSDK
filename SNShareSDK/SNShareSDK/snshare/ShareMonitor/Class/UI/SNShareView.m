@@ -14,11 +14,13 @@
 
 @interface SNShareView ()
 
-//@property (nonatomic,strong) 
+@property (nonatomic,weak) NSArray *itemsArray;
 
 @end
 
 @implementation SNShareView
+
+@synthesize itemsArray;
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -31,9 +33,9 @@
 
 -(void)addView
 {
-    NSArray *itemsArray = [SNShareManager sharedSNShareManager].resourceArray;
-    int rows = itemsArray.count / 3  + 1;
-    int colos = itemsArray.count%3;
+    itemsArray = [SNShareManager sharedSNShareManager].resourceArray;
+    int rows = (int)itemsArray.count / 3  + 1;
+    int colos = (int)itemsArray.count%3;
     
     NSMutableArray *btns = [[NSMutableArray alloc] init];
     for (int i = 0; i < rows; i ++ ) {
