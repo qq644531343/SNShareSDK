@@ -10,9 +10,9 @@
 #import "SNShareDelegate.h"
 
 @interface SNShareWindow : UIWindow
-{
-    id<SNShareDelegate> _shareDelegate;
-}
+
+@property (nonatomic,weak) id<SNShareDelegate> shareDelegate;
+
 
 +(SNShareWindow *)sharedSNShareWindow;
 

@@ -37,6 +37,31 @@
     }
 }
 
++(VDShareParam *)getShareParam:(SNShareModel *)model
+{
+    VDShareParam *params = [[VDShareParam alloc] init];
+    params.title = @"hello";
+    NSString *_desc = @"world";
+    if (_desc.length >= 140) {
+        params.description = [_desc substringToIndex:138];
+    }else {
+        params.description = _desc;
+    }
+    
+    params.image = [UIImage imageNamed:@"app.png"];
+    //NSData *data = UIImageJPEGRepresentation(params.image, 1.0f);
+    
+    params.imgUrl = @"http://img0.bdstatic.com/img/image/shouye/mxlyf-9632102318.jpg";
+    params.videoID = @"1234";
+    params.url = @"http://video.sina.com.cn/app";
+    VDShareVideoParam *videoParam = [[VDShareVideoParam alloc] init];
+    videoParam.videoUrl = @"http://video.sina.com.cn/app";
+    params.videoUrl = videoParam;
+    
+    return params;
+
+}
+
 +(NSString *)parseResponseCode:(VDShareErrCode)errCode
 {
     

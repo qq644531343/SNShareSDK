@@ -83,91 +83,57 @@ static SNShareManager *instance = nil;
     return YES;
 }
 
--(void)test
-{
-    VDShareParam *params = [[VDShareParam alloc] init];
-    params.title = @"hello";
-    NSString *_desc = @"world";
-    if (_desc.length >= 140) {
-        params.description = [_desc substringToIndex:138];
-    }else {
-        params.description = _desc;
-    }
-    
-    params.image = [UIImage imageNamed:@"app.png"];
-    //NSData *data = UIImageJPEGRepresentation(params.image, 1.0f);
-    
-    params.imgUrl = @"http://img0.bdstatic.com/img/image/shouye/mxlyf-9632102318.jpg";
-    params.videoID = @"1234";
-    params.url = @"http://video.sina.com.cn/app";
-    VDShareVideoParam *videoParam = [[VDShareVideoParam alloc] init];
-    videoParam.videoUrl = @"http://video.sina.com.cn/app";
-    params.videoUrl = videoParam;
-    
-    NSArray *titleArray = [NSArray arrayWithObjects:@"微博", @"朋友圈",  @"微信好友", @"QQ空间", @"QQ好友", nil];
-    NSString *title = [titleArray objectAtIndex:1];
-    if ([title isEqualToString:@"微博"]) {
-        //[self sinaweiboLoginClicked:btn];
-        return;
-    }
-    
-    if ([title isEqualToString:@"微信好友"]) {
-        [[VDShareManager sharedInstance] shareToWXWithObject:params delegate:self shareType:eVDWXShareTypeLink messageType:eVDWXMessageTypeMultimedia];
-    }
-    
-    if ([title isEqualToString:@"朋友圈"]) {
-        
-        [[VDShareManager sharedInstance] shareToWXMomentsWithObject:params delegate:self shareType:eVDWXShareTypeLink messageType:eVDWXMessageTypeMultimedia];
-        
-    }
-    
-    if ([title isEqualToString:@"QQ空间"]) {
-        
-        [[VDShareManager sharedInstance] shareToQzoneWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
-    }
-    
-    if ([title isEqualToString:@"QQ好友"]) {
-        
-        [[VDShareManager sharedInstance] shareToShouQQWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
-    }
-    
-}
-
 #pragma mark - VDShareManagerDelegate
 
 -(void)onShareResponse2:(VDShareErrCode)errCode {
     
     NSString *msg = [SNShareTool parseResponseCode:errCode];
-    [ALToastView toastInView:[UIApplication sharedApplication].keyWindow withText:msg];
+    [ALToastView toastInView:[SNShareWindow sharedSNShareWindow] withText:msg];
+    
+    id<SNShareDelegate> delegate = [SNShareWindow sharedSNShareWindow].shareDelegate;
+    if ([delegate respondsToSelector:@selector(SNShareResponse:Msg:)]) {
+        [delegate SNShareResponse:errCode Msg:msg];
+    }
 
 }
 
 #pragma mark - SNShareActionDelegate
 -(void)SNShareClickInView:(UIView *)view parentView:(UIView *)pview resModel:(SNShareResModel *)res
 {
-    NSLog(@"%@",res.title);
+    DLog(@"%@",res.title);
+    
+    SNShareModel *data = nil;
+    id<SNShareDelegate> delegate = [SNShareWindow sharedSNShareWindow].shareDelegate;
+    if ([delegate respondsToSelector:@selector(SNShareDataSource)]) {
+        data = [delegate SNShareDataSource];
+        if ( 0 && data == nil) {
+            return;
+        }
+    }
+    
+    VDShareParam *params = [SNShareTool getShareParam:data];
     
     if (res.dest == SNShareDestinationWeibo) {
         //[self sinaweiboLoginClicked:btn];
         return;
     }
     
-    if ([title isEqualToString:@"微信好友"]) {
+    if (res.dest == SNShareDestinationWeixinFriend) {
         [[VDShareManager sharedInstance] shareToWXWithObject:params delegate:self shareType:eVDWXShareTypeLink messageType:eVDWXMessageTypeMultimedia];
     }
     
-    if ([title isEqualToString:@"朋友圈"]) {
+    if (res.dest == SNShareDestinationWeixinMoments) {
         
         [[VDShareManager sharedInstance] shareToWXMomentsWithObject:params delegate:self shareType:eVDWXShareTypeLink messageType:eVDWXMessageTypeMultimedia];
         
     }
     
-    if ([title isEqualToString:@"QQ空间"]) {
+    if (res.dest == SNShareDestinationQQZone) {
         
         [[VDShareManager sharedInstance] shareToQzoneWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
     }
     
-    if ([title isEqualToString:@"QQ好友"]) {
+    if (res.dest == SNShareDestinationQQFriend) {
         
         [[VDShareManager sharedInstance] shareToShouQQWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
     }

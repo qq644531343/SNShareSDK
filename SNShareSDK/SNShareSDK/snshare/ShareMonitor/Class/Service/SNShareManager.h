@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "SNShareHeaders.h"
+
 
 @class SNShareModel;
 @protocol SNShareActionDelegate;
-
 
 @interface SNShareManager : NSObject<VDShareManagerDelegate,SNShareActionDelegate>
 

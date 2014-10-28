@@ -20,16 +20,16 @@
     [super viewDidLoad];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn setTitle:@"Test" forState:UIControlStateNormal];
+    [btn setTitle:@"enterShare" forState:UIControlStateNormal];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(100, 200, 80, 50);
-    [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(enterShareClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self SNShareDataSource];
     
 }
 
--(void)test
+-(void)enterShareClick
 {
     SNShareShow(self)
 }
@@ -38,14 +38,14 @@
 -(SNShareModel *)SNShareDataSource
 {
     NSError *error = [SNShareTool checkDataModel:nil];
-    NSLog(@"%@",[error localizedDescription]);
+    DLog(@"%@",[error localizedDescription]);
     return nil;
     
 }
 
 -(void)SNShareResponse:(VDShareErrCode)errCode Msg:(NSString *)msg
 {
-    
+    DLog(@"%@",msg);
 }
 
 @end
