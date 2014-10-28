@@ -37,8 +37,9 @@ static SNShareWindow *instance = nil;
                 instance.hidden = YES;
                 instance.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.3];
                 
-                SNShareView *view = [[SNShareView alloc] initWithFrame:CGRectMake(0, 100, 320, 280)];
-                //view.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5];
+                SNShareView *view = [[SNShareView alloc] initWithFrame:CGRectMake(0, 100, 320, 260)];
+                view.tag = 1001;
+                view.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
                 [instance addSubview:view];
             }
         }
@@ -94,8 +95,10 @@ static SNShareWindow *instance = nil;
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if (UIInterfaceOrientationIsLandscape(orientation)) {
         self.bounds = CGRectMake(0, 0, _screenFrame.size.height, _screenFrame.size.width);
+        [self viewWithTag:1001].frame = CGRectMake(0, 100, 568, 220);
     }else {
         self.bounds = CGRectMake(0, 0, _screenFrame.size.width, _screenFrame.size.height);
+        [self viewWithTag:1001].frame = CGRectMake(0, 100, 320, 260);
     }
 }
 

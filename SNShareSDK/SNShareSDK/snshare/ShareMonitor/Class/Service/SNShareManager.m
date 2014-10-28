@@ -142,5 +142,36 @@ static SNShareManager *instance = nil;
 
 }
 
+#pragma mark - SNShareActionDelegate
+-(void)SNShareClickInView:(UIView *)view parentView:(UIView *)pview resModel:(SNShareResModel *)res
+{
+    NSLog(@"%@",res.title);
+    
+    if (res.dest == SNShareDestinationWeibo) {
+        //[self sinaweiboLoginClicked:btn];
+        return;
+    }
+    
+    if ([title isEqualToString:@"微信好友"]) {
+        [[VDShareManager sharedInstance] shareToWXWithObject:params delegate:self shareType:eVDWXShareTypeLink messageType:eVDWXMessageTypeMultimedia];
+    }
+    
+    if ([title isEqualToString:@"朋友圈"]) {
+        
+        [[VDShareManager sharedInstance] shareToWXMomentsWithObject:params delegate:self shareType:eVDWXShareTypeLink messageType:eVDWXMessageTypeMultimedia];
+        
+    }
+    
+    if ([title isEqualToString:@"QQ空间"]) {
+        
+        [[VDShareManager sharedInstance] shareToQzoneWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
+    }
+    
+    if ([title isEqualToString:@"QQ好友"]) {
+        
+        [[VDShareManager sharedInstance] shareToShouQQWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
+    }
+
+}
 
 @end

@@ -10,8 +10,10 @@
 #import "SNShareHeaders.h"
 
 @class SNShareModel;
+@protocol SNShareActionDelegate;
 
-@interface SNShareManager : NSObject<VDShareManagerDelegate>
+
+@interface SNShareManager : NSObject<VDShareManagerDelegate,SNShareActionDelegate>
 
 +(SNShareManager *)sharedSNShareManager;
 

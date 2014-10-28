@@ -14,6 +14,7 @@ typedef enum SNShareViewDisplayType
 }SNShareViewDisplayType;
 
 #import <UIKit/UIKit.h>
+#import "SNShareManager.h"
 
 @interface SNShareView : UIView
 

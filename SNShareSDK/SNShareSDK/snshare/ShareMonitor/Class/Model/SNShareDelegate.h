@@ -11,6 +11,11 @@
 
 #import "SNShareModel.h"
 
+@class SNShareResModel;
+
+/*!
+ *  @brief  分享数据及返回协议
+ */
 @protocol SNShareDelegate <NSObject>
 
 /*!
@@ -24,6 +29,23 @@
  *  @param errCode 参看 VDShareErrCode
  */
 -(void)SNShareResponse:(VDShareErrCode)errCode Msg:(NSString *)msg;
+
+@end
+
+/////////////////////////////////////
+
+/*!
+ *  @brief  UI与Manager点击响应协议
+ */
+@protocol SNShareActionDelegate <NSObject>
+
+/*!
+ *  @brief  分享点击事件
+ *  @param view 按钮
+ *  @param view 分享View
+ *  @param res  资源数据
+ */
+-(void)SNShareClickInView:(UIView *)view parentView:(UIView *)pview resModel:(SNShareResModel *)res;
 
 @end
 
