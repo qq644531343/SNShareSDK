@@ -114,7 +114,7 @@ static SNShareManager *instance = nil;
     VDShareParam *params = [SNShareTool getShareParam:data];
     
     if (res.dest == SNShareDestinationWeibo) {
-        //[self sinaweiboLoginClicked:btn];
+        [self sinaweiboLoginCheck];
         return;
     }
     
@@ -138,6 +138,14 @@ static SNShareManager *instance = nil;
         [[VDShareManager sharedInstance] shareToShouQQWithObject:params delegate:self messageType:eVDQQMessageTypeNews];
     }
 
+}
+
+#pragma mark - Tool
+-(void)sinaweiboLoginCheck
+{
+    //未登录
+    
+    //已登录
 }
 
 @end

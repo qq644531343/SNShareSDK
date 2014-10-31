@@ -35,6 +35,4 @@
 @property (nonatomic,strong) NSArray *resourceArray;
 
 
--(void)test;
-
 @end
